@@ -15,7 +15,7 @@ public class Main {
     else if(cycles >= 310 && cycles < 929 ){
       mediumCount++; // increments the medium used battery counts
     }
-    else if(cycles >= 929){
+    else{
       highCount++; // increments the high used battery count
     }
     return counts;
