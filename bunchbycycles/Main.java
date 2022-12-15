@@ -9,6 +9,15 @@ public class Main {
 
   static CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
+    if(cycles < 310){
+      lowCount++; //increments the low usage battery count
+    }
+    else if(cycles >= 310 && cycles < 929 ){
+      mediumCount++; // increments the medium used battery counts
+    }
+    else if(cycles >= 929){
+      highCount++; // increments the high used battery count
+    }
     return counts;
   }
 
