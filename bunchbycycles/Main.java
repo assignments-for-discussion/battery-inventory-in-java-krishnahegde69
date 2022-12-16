@@ -20,6 +20,19 @@ public class Main {
 //         counts.highCount++; // increments the high used battery count
 //       }
 //     }
+    
+   
+      if(cycles < 310){
+        lowCount++; //increments the low usage battery count
+      }
+      else if(cycles >= 310 && cycles[i] < 929 ){
+        mediumCount++; // increments the medium used battery counts
+      }
+      else{
+        highCount++; // increments the high used battery count
+      }
+
+    
     return counts;
   }
 
