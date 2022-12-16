@@ -9,17 +9,17 @@ public class Main {
 
   static CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
-    for(int i=0; i<cycles.length; i++){
-      if(cycles[i] < 310){
-        counts.lowCount++; //increments the low usage battery count
-      }
-      else if(cycles[i] >= 310 && cycles[i] < 929 ){
-        counts.mediumCount++; // increments the medium used battery counts
-      }
-      else{
-        counts.highCount++; // increments the high used battery count
-      }
-    }
+//     for(int i=0; i<cycles.length; i++){
+//       if(cycles[i] < 310){
+//         counts.lowCount++; //increments the low usage battery count
+//       }
+//       else if(cycles[i] >= 310 && cycles[i] < 929 ){
+//         counts.mediumCount++; // increments the medium used battery counts
+//       }
+//       else{
+//         counts.highCount++; // increments the high used battery count
+//       }
+//     }
     return counts;
   }
 
